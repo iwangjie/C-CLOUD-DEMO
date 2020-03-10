@@ -7,11 +7,11 @@
 `C-Cloud` 使用了轻量级 Web开发框架 SpringBoot 进行开发，并且易于扩展，如果对你有帮助，欢迎 Star 或 Fork 参与开发。
 
 
-本项目为 C-CLOUD 前端项目
+本项目为 C-CLOUD APP 演示项目
 
-后端项目移步：https://github.com/iwangjie/ccloud-web
+前端项目移步：https://github.com/iwangjie/ccloud-web
 
-演示 APP 移步：https://github.com/iwangjie/C-CLOUD-DEMO
+后端项目移步：https://github.com/iwangjie/ccloud-main
 
 ## 功能
 
@@ -29,34 +29,8 @@
 ##
 ## 如何开始？
 
-
-### 安装依赖
-```
-yarn install
-```
-
-### 启动服务
-```
-yarn serve
-```
-
-### 打包部署
-```
-yarn build
-```
-
-### src文件下目录结构
-```
-├─assets // 资源
-├─components // 组件
-│  └─Menu //菜单
-├─core // 核心及组件按需加载配置
-├─router // 路由配置
-├─store // vuex配置
-└─views // 页面
-    └─layout // 布局页
-``` 
-
+### 使用 Android Studio 导入项目
+![image.png](https://i.loli.net/2020/03/10/SvOAfwoF7mkntK1.png)
 
 
 
