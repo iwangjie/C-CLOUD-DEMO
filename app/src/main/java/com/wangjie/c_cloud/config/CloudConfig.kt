@@ -26,9 +26,17 @@ class CloudConfig() {
 
         private const val APP_ID = 1
 
+        // 登录
+        const val LOGIN_API = "$CLOUD_SERVER/api/login"
+
+        // 检查更新
         const val UPDATE_API = "$CLOUD_SERVER/api/update/version"
 
+        // 公告
         const val NOTICE_API = "$CLOUD_SERVER/api/notice/last"
+
+        // 留言
+        const val MESSAGE_API = "$CLOUD_SERVER/api/feedback/save"
 
 
         /**

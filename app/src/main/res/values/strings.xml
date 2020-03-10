@@ -9,8 +9,8 @@
 
     <string name="menu_home">首页</string>
     <string name="menu_gallery">登录注册</string>
-    <string name="menu_slideshow">系统公告</string>
-    <string name="menu_tools">日志反馈</string>
+    <string name="menu_slideshow">激活VIP</string>
+    <string name="menu_tools">留言反馈</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
 </resources>
