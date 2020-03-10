@@ -13,9 +13,9 @@ class CloudConfig() {
 
         val objectMapper = ObjectMapper();
 
-        private const val CLOUD_SERVER = "http://192.168.0.101:8080"
+        private const val CLOUD_SERVER = "http://192.168.0.101:8080/ccloud"
 
-        const val APP_ID = "1"
+        private const val APP_ID = 1
 
         const val UPDATE_API = "$CLOUD_SERVER/api/update/version"
 
@@ -23,9 +23,10 @@ class CloudConfig() {
         /**
          * 向 APP 添加 元参数
          */
-        fun buildParamMeta(param: MutableMap<String, String>): String {
-            param["appId"] = APP_ID
-            return objectMapper.writeValueAsString(param)
+        fun buildParamMeta(param: JsonNode): String {
+            val objectNode = param as ObjectNode
+            objectNode.put("appId", APP_ID)
+            return objectNode.toString()
         }
 
     }
