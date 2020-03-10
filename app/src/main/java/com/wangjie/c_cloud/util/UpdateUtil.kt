@@ -11,7 +11,6 @@ import android.widget.Toast
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.node.ObjectNode
 import com.wangjie.c_cloud.BuildConfig
-import com.wangjie.c_cloud.MainActivity
 import com.wangjie.c_cloud.config.CloudConfig
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient

@@ -1,6 +1,5 @@
 package com.wangjie.c_cloud.ui.home
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
@@ -14,4 +13,16 @@ class HomeViewModel : ViewModel() {
     }
     val text: LiveData<String> = _text
 
+
+    /**
+     * 公告相关
+     */
+    private val _noticeText = MutableLiveData<JsonNode>().apply {
+
+    }
+    val noticeText: MutableLiveData<JsonNode> = _noticeText
+
+    fun setNoticeText(noticeText: JsonNode?) {
+        _noticeText.postValue(noticeText)
+    }
 }

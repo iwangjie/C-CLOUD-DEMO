@@ -17,16 +17,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/edit_text1"
+    <TextView
+        android:id="@+id/notice_title_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="公告标题"
         android:textSize="20dp"
-        android:text=""
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/notice_info_text"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_home"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <TextView
+        android:id="@+id/notice_info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="公告内容"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_home" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
